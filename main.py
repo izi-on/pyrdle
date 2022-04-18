@@ -74,7 +74,7 @@ def letter_in_place(w,l,i, wc):
 def guess_word(wa, wg):
     guessed = True
     wc = [False]*len(wa) #check if the letter has already been guessed
-    present = ["grey"]*len(wa)
+    present = ["white"]*len(wa)
     for i in range(len(wg)):
         if letter_in_place(wa, wg[i], i, wc): #the letter is in the correct position
             present[i] = "green"
